@@ -39,5 +39,6 @@ def load_gestures(base_path: str | Path = None) -> pd.DataFrame:
     return final_df
 
 if __name__ == "__main__":
-    df = load_gestures("gestures/")
+    df = load_gestures("gestures/files/")
     print("DataFrame cargado con éxito")
+    print(df.head())
